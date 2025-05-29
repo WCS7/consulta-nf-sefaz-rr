@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Internamento de NF - SEFAZ RR (Simulado)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+    }
+    header {
+      background-color: #0a2a79;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #0a2a79;
+      color: white;
+    }
+    iframe {
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header class="py-3">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <h1 class="h5 text-white mb-0">SEFAZ RORAIMA - Simulado</h1>
+      <nav>
+        <a href="#empresa" class="me-3">Empresa</a>
+        <a href="#cidadao" class="me-3">Cidadão</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h2 class="mb-3">Consultar Internamento de Nota Fiscal</h2>
+      <p class="text-muted">Digite os dados abaixo para prosseguir com a consulta:</p>
+    </div>
+    <form class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Digite a chave da NF">
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary"><i class="fas fa-search"></i> Consultar</button>
+      </div>
+    </form>
+    <div class="text-center mb-4">
+      <p class="text-secondary">Sistema da SEFAZ-RR abaixo (iframe simulado)</p>
+    </div>
+    <iframe src="https://batimento.sefaz.rr.gov.br/" width="100%" height="600" loading="lazy"></iframe>
+  </main>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <small>Projeto demonstrativo baseado na SEFAZ RR. Desenvolvido gratuitamente para fins educacionais.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 # consulta-nf-sefaz-rr
